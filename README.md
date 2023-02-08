@@ -7,7 +7,7 @@ The repository contains the following scrapers:
 
   - Scraper for getting product details from an e-commerce website
   - Scraper for extracting a list of valid proxies from a GitHub repository
-  - 
+ 
 ## Requirements
 In order to run the code in this repository, you need to have the following installed:
 
