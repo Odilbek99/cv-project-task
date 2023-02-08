@@ -1,11 +1,11 @@
 # cv-project-task
 ## Introduction
-This repository contains multiple web scrappers built with Python using libraries such as Requests and BeautifulSoup. The purpose of these scrappers is to extract information from various websites and save it in a format that can be easily processed for further analysis or use.
+This repository contains multiple web scrappers built with Python using Selenium and BeautifulSoup. The purpose of these scrappers is to extract Image from website and save it in a format that can be easily processed for further analysis or use.
 
 ## Content
 The repository contains the following scrapers:
 
-  - Scraper for getting product details from an e-commerce website
+  - Scraper for getting product details (brand name,product name,weared cloth and the cloth itself) from website
   - Scraper for extracting a list of valid proxies from a GitHub repository
  
 ## Requirements
