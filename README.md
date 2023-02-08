@@ -11,10 +11,16 @@ The repository contains the following scrapers:
 ## Requirements
 In order to run the code in this repository, you need to have the following installed:
 
-Python 3.x
-Requests library
-BeautifulSoup library
-Selenium
+  - Python 3.x
+  - Requests library
+  - BeautifulSoup library
+  - Selenium
+
+To install requirements run the following code:
+```
+pip install -r requirements.txt
+
+```
 
 ## Usage
 Each scraper has its own script file which can be run separately. You can run the code by using the following command:
