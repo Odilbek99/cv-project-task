@@ -35,7 +35,7 @@ class ProxyScraper:
         """
         Saves the valid proxies to a file.
         """
-        save_path = 'Image Scrapper (BS4)\data'
+        save_path = 'Scraper\data'
 
         name_of_file = 'proxies'
 
