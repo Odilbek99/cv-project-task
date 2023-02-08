@@ -30,3 +30,5 @@ python image_scrapper.py
 ```
 # Segmentation
 This task about segmentation of images and extracting masks from that image to change the background color of an image. In this task the implenetation was pretty straightforward. The code is readable, understandable and well documented. Using colab is highly recommende to open this notebook.
+
+## You can see report for details. Let me know if you have any question regarding to code or used approaches.
