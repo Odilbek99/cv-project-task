@@ -1,6 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 from tqdm import tqdm
+import os.path
+
 
 class ProxyScraper:
     def __init__(self, proxy_url):
@@ -23,7 +25,7 @@ class ProxyScraper:
         for proxy in tqdm(self.proxies):
             try:
                 r = requests.get("https://www.google.com", proxies={'https': proxy}, timeout=3)
-                if r.status_code == 200:
+                if r.status_code == 200: 
                     self.valid_proxies.append(proxy)
 
             except:
@@ -33,8 +35,14 @@ class ProxyScraper:
         """
         Saves the valid proxies to a file.
         """
-        with open('data/proxies.txt', 'a') as file:
-            for proxy in tqdm(self.valid_proxies):
+        save_path = 'Image Scrapper (BS4)\data'
+
+        name_of_file = 'proxies'
+
+        completeName = os.path.join(save_path, name_of_file+".txt")
+
+        with open(completeName, 'w') as file:
+            for proxy in self.valid_proxies:
                 file.write(f'{proxy}\n')
 
     def run(self):
@@ -47,4 +55,5 @@ class ProxyScraper:
 
 proxy_scraper = ProxyScraper(proxy_url='https://github.com/clarketm/proxy-list/blob/master/proxy-list-raw.txt')
 proxy_scraper.run()
+proxy_scraper.save_proxies()
 
