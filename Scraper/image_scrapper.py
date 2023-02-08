@@ -1,9 +1,12 @@
 from bs4 import BeautifulSoup
 import requests
+from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 import undetected_chromedriver as uc
 import json 
 from tqdm import tqdm
+import os
+from selenium.webdriver.chrome.options import Options
 
 class RalphLaurenScraper:
     def __init__(self, url):
@@ -18,7 +21,7 @@ class RalphLaurenScraper:
         the number of products and returns the links to access all of the products.
         """
 
-        driver = uc.Chrome()
+        driver = webdriver.Chrome()
         driver.get(self.url)
         soup = BeautifulSoup(driver.page_source, "html.parser")
 
@@ -37,9 +40,9 @@ class RalphLaurenScraper:
         """
 
         urls = self.ajax_urls
-        driver = uc.Chrome()
-        driver.implicitly_wait(10)
-        wait = WebDriverWait(driver, 10)
+        driver = webdriver.Firefox()
+        # driver.implicitly_wait(10)
+        wait = WebDriverWait(driver, 20)
         for url in urls:
             driver.get(url)
             soup = BeautifulSoup(driver.page_source, "html.parser")
