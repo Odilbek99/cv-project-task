@@ -1,4 +1,4 @@
-# cv-project-task
+# Scrapers
 ## Introduction
 This repository contains multiple web scrappers built with Python using Selenium and BeautifulSoup. The purpose of these scrappers is to extract Image from website and save it in a format that can be easily processed for further analysis or use.
 
@@ -28,3 +28,7 @@ Each scraper has its own script file which can be run separately. You can run th
 python image_scrapper.py
 
 ```
+# Segmentation
+This task about segmentation of images and extracting masks from that image to change the background color of an image. In this task the implenetation was pretty straightforward. The code is readable, understandable and well documented. Using colab is highly recommende to open this notebook.
+
+## You can see report for details. Let me know if you have any question regarding to code or used approaches.
